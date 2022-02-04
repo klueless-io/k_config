@@ -98,15 +98,15 @@ RSpec.describe KConfig::Configuration do
 
     describe '#debug' do
       subject { instance.debug }
-    
+
       let(:instance) { KConfig.configuration }
-    
+
       before do
         instance.config_name = :debug
         instance.custom1 = 'Custom 1'
         instance.custom2 = 'Custom 2'
       end
-    
+
       it { subject }
     end
   end
@@ -116,15 +116,15 @@ RSpec.describe KConfig::Configuration do
 
     describe '#clone' do
       subject { instance.clone }
-    
+
       let(:instance) { KConfig.configuration }
-    
+
       before do
         instance.config_name = :clone
         instance.clone1 = 'Clone1'
         instance.clone2 = 'Clone2'
       end
-    
+
       it { is_expected.to have_attributes(clone1: 'Clone1_copy', clone2: 'Clone2_copy') }
     end
   end

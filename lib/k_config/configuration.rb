@@ -35,11 +35,11 @@ module KConfig
       def register(key, extension)
         if registered_keys.include?(key)
           puts "Key #{key} already registered ... skipping"
-          return self.registered_keys
+          return registered_keys
         end
 
         include(extension)
-        self.registered_keys << key
+        registered_keys << key
       end
     end
   end
