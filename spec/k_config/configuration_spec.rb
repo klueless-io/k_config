@@ -102,7 +102,6 @@ RSpec.describe KConfig::Configuration do
       let(:instance) { KConfig.configuration }
 
       before do
-        instance.config_name = :debug
         instance.custom1 = 'Custom 1'
         instance.custom2 = 'Custom 2'
       end
@@ -120,7 +119,6 @@ RSpec.describe KConfig::Configuration do
       let(:instance) { KConfig.configuration }
 
       before do
-        instance.config_name = :clone
         instance.clone1 = 'Clone1'
         instance.clone2 = 'Clone2'
       end
