@@ -42,6 +42,6 @@ Gem::Specification.new do |spec|
   }
 
   spec.add_dependency 'k_log', '~> 0.0.0'
-  # spec.add_dependency 'k_type', '~> 0.0.0'
-  # spec.add_dependency 'k_util', '~> 0.0.0'
+  spec.add_dependency 'k_type', '~> 0.0.0'
+  spec.add_dependency 'k_util', '~> 0.0.0'
 end
