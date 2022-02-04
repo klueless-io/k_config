@@ -1,3 +1,12 @@
+## [0.0.5](https://github.com/klueless-io/k_config/compare/v0.0.4...v0.0.5) (2022-02-04)
+
+
+### Bug Fixes
+
+* add registered extensions and support for debug and initialize_copy inside of registered extensions ([da0d62d](https://github.com/klueless-io/k_config/commit/da0d62dcd6b4d1c4f556e2bccf6bde56a06baf8c))
+* add registered extensions and support for debug and initialize_copy inside of registered extensions ([ce35adb](https://github.com/klueless-io/k_config/commit/ce35adb700c16e189da7a70d9aa206a91f629f99))
+* flakey test ([ca87322](https://github.com/klueless-io/k_config/commit/ca873225580d406c0a2dc8709f04a9dd223b5c23))
+
 ## [0.0.4](https://github.com/klueless-io/k_config/compare/v0.0.3...v0.0.4) (2022-02-04)
 
 
