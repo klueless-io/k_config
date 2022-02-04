@@ -25,7 +25,7 @@ KManager.action :bootstrap do
       .github(
         repo_name: application_name.to_s
       ) do
-        create_repository
+        # create_repository
         # delete_repository
         # list_repositories
         # open_repository
