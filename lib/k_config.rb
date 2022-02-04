@@ -15,5 +15,3 @@ if ENV['KLUE_DEBUG']&.to_s&.downcase == 'true'
   version   = KConfig::VERSION.ljust(9)
   puts "#{namespace.ljust(35)} : #{version.ljust(9)} : #{file_path}"
 end
-
-

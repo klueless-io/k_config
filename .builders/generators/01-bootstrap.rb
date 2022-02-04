@@ -66,21 +66,21 @@ KManager.action :bootstrap do
 
         dd = OpenStruct.new(dom)
 
-        add("lib/#{dd.application}.rb"             , template_file: 'lib/applet_name.rb'         , dom: dom)
-        add("lib/#{dd.application}/version.rb"     , template_file: 'lib/applet_name/version.rb' , dom: dom)
+        # add("lib/#{dd.application}.rb"             , template_file: 'lib/applet_name.rb'         , dom: dom)
+        # add("lib/#{dd.application}/version.rb"     , template_file: 'lib/applet_name/version.rb' , dom: dom)
     
-        add('spec/spec_helper.rb')
-        add("spec/#{dd.application}_spec.rb"       , template_file: 'spec/applet_name_spec.rb', dom: dom)
+        # add('spec/spec_helper.rb')
+        # add("spec/#{dd.application}_spec.rb"       , template_file: 'spec/applet_name_spec.rb', dom: dom)
 
-        add("#{dd.application}.gemspec"            , template_file: 'applet_name.gemspec', dom: dom)
-        add('Gemfile', dom: dom)
-        add('Guardfile', dom: dom)
-        add('Rakefile', dom: dom)
-        add('.rspec', dom: dom)
-        add('.rubocop.yml', dom: dom)
-        add('README.md', dom: dom)
-        add('docs/CODE_OF_CONDUCT.md', dom: dom)
-        add('docs/LICENSE.txt', dom: dom)
+        # add("#{dd.application}.gemspec"            , template_file: 'applet_name.gemspec', dom: dom)
+        # add('Gemfile', dom: dom)
+        # add('Guardfile', dom: dom)
+        # add('Rakefile', dom: dom)
+        # add('.rspec', dom: dom)
+        # add('.rubocop.yml', dom: dom)
+        # add('README.md', dom: dom)
+        # add('docs/CODE_OF_CONDUCT.md', dom: dom)
+        # add('docs/LICENSE.txt', dom: dom)
 
         # run_command("rubocop -a")
       
@@ -105,7 +105,7 @@ KManager.action :bootstrap do
         # run_command('npm install -D --package-lock-only https://github.com/klueless-js/semantic-release-rubygem')
         # add('.releaserc.json')
 
-        run_command("git add .; git commit -m 'chore: #{self.options.description.downcase}'; git push")
+        run_command("git add .; git commit -m 'fix: #{self.options.description.downcase}'; git push")
       end
 
     # director.k_builder.debug
