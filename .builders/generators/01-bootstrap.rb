@@ -41,21 +41,21 @@ KManager.action :bootstrap do
         # oadd('bin/runonce/git-setup.sh', dom: dom)
         # run_template_script('bin/runonce/git-setup.sh', dom: dom)
 
-        add('.githooks/commit-msg') #, template_subfolder: 'ruby', template_file: 'commit-msg')
-        add('.githooks/pre-commit') #, template_subfolder: 'ruby', template_file: 'pre-commit')
+        # add('.githooks/commit-msg') #, template_subfolder: 'ruby', template_file: 'commit-msg')
+        # add('.githooks/pre-commit') #, template_subfolder: 'ruby', template_file: 'pre-commit')
 
-        run_command('chmod +x .githooks/commit-msg')
-        run_command('chmod +x .githooks/pre-commit')
+        # run_command('chmod +x .githooks/commit-msg')
+        # run_command('chmod +x .githooks/pre-commit')
 
-        add('.gitignore')
+        # add('.gitignore')
 
-        add('bin/setup')
-        add('bin/console')
+        # add('bin/setup')
+        # add('bin/console')
 
-        run_command('git config core.hooksPath .githooks') # enable sharable githooks (developer needs to turn this on before editing rep)
-        run_command("gh repo edit -d \"#{dom[:application_description]}\"")
+        # run_command('git config core.hooksPath .githooks') # enable sharable githooks (developer needs to turn this on before editing rep)
+        # run_command("gh repo edit -d \"#{dom[:application_description]}\"")
 
-        run_command("git add .; git commit -m 'chore: #{self.options.description.downcase}'; git push")
+        # run_command("git add .; git commit -m 'chore: #{self.options.description.downcase}'; git push")
       end
       .blueprint(
         name: :opinionated,
@@ -64,10 +64,10 @@ KManager.action :bootstrap do
 
         cd(:app)
 
-        # dd = OpenStruct.new(dom)
+        dd = OpenStruct.new(dom)
 
-        # add("lib/#{dd.application}.rb"             , template_file: 'lib/applet_name.rb'         , dom: dom)
-        # add("lib/#{dd.application}/version.rb"     , template_file: 'lib/applet_name/version.rb' , dom: dom)
+        oadd("lib/#{dd.application}.rb"             , template_file: 'lib/applet_name.rb'         , dom: dom)
+        oadd("lib/#{dd.application}/version.rb"     , template_file: 'lib/applet_name/version.rb' , dom: dom)
     
         # add('spec/spec_helper.rb')
         # add("spec/#{dd.application}_spec.rb"       , template_file: 'spec/applet_name_spec.rb', dom: dom)
