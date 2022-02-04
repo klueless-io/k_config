@@ -39,7 +39,7 @@ KManager.action :bootstrap do
         cd(:app)
 
         # oadd('bin/runonce/git-setup.sh', dom: dom)
-        # run_template_script('bin/runonce/git-setup.sh', dom: dom)
+        run_template_script('bin/runonce/git-setup.sh', dom: dom)
 
         # add('.githooks/commit-msg') #, template_subfolder: 'ruby', template_file: 'commit-msg')
         # add('.githooks/pre-commit') #, template_subfolder: 'ruby', template_file: 'pre-commit')
