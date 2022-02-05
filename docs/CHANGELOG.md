@@ -1,3 +1,10 @@
+## [0.0.6](https://github.com/klueless-io/k_config/compare/v0.0.5...v0.0.6) (2022-02-05)
+
+
+### Bug Fixes
+
+* add support for initialize hook ([2249edd](https://github.com/klueless-io/k_config/commit/2249edd72cfc8054b8fc18391bca907446d066db))
+
 ## [0.0.5](https://github.com/klueless-io/k_config/compare/v0.0.4...v0.0.5) (2022-02-04)
 
 
