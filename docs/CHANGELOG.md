@@ -1,3 +1,11 @@
+## [0.0.7](https://github.com/klueless-io/k_config/compare/v0.0.6...v0.0.7) (2022-02-05)
+
+
+### Bug Fixes
+
+* fix cops ([5bab6f2](https://github.com/klueless-io/k_config/commit/5bab6f2fbebf565e2acba566f237c1d9969a82ec))
+* remove redunant documents ([4aa4d13](https://github.com/klueless-io/k_config/commit/4aa4d13f8453ffdd184bdecb56313c3bf49e65ac))
+
 ## [0.0.6](https://github.com/klueless-io/k_config/compare/v0.0.5...v0.0.6) (2022-02-05)
 
 
