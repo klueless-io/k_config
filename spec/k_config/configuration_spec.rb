@@ -33,6 +33,14 @@ module CloneMeExtension
   end
 end
 
+module InitializeMeExtension
+  attr_accessor :set_me
+
+  def initialize_me_initialize
+    @set_me = 'set in the initializer'
+  end
+end
+
 class CustomConfig
   attr_accessor :custom
 end
@@ -99,7 +107,7 @@ RSpec.describe KConfig::Configuration do
     describe '#debug' do
       subject { instance.debug }
 
-      let(:instance) { KConfig.configuration }
+      let(:instance) { described_class.new }
 
       before do
         instance.custom1 = 'Custom 1'
@@ -116,7 +124,7 @@ RSpec.describe KConfig::Configuration do
     describe '#clone' do
       subject { instance.clone }
 
-      let(:instance) { KConfig.configuration }
+      let(:instance) { described_class.new }
 
       before do
         instance.clone1 = 'Clone1'
@@ -124,6 +132,20 @@ RSpec.describe KConfig::Configuration do
       end
 
       it { is_expected.to have_attributes(clone1: 'Clone1_copy', clone2: 'Clone2_copy') }
+    end
+  end
+
+  context 'when registering an extension module with initialize hook' do
+    before do
+      described_class.register(:initialize_me, InitializeMeExtension)
+    end
+
+    describe '#initialize' do
+      subject { instance.set_me }
+
+      let(:instance) { described_class.new }
+
+      it { is_expected.to eq('set in the initializer') }
     end
   end
 
