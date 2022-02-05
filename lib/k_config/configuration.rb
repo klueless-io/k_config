@@ -5,7 +5,7 @@ module KConfig
   #
   # Hooks:
   #   You can use hooks to add your own customizations to configuration extensions.
-  class Configuration
+  class    Configuration
     include KUtil::Data::InstanceVariablesToH
     include KLog::Logging
 

@@ -105,7 +105,7 @@ KManager.action :bootstrap do
         # run_command('npm install -D --package-lock-only https://github.com/klueless-js/semantic-release-rubygem')
         # add('.releaserc.json')
 
-        run_command("git add .; git commit -m 'fix: #{self.options.description.downcase}'; git push")
+        # run_command("git add .; git commit -m 'fix: #{self.options.description.downcase}'; git push")
       end
 
     # director.k_builder.debug
