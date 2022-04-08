@@ -1,3 +1,10 @@
+## [0.0.8](https://github.com/klueless-io/k_config/compare/v0.0.7...v0.0.8) (2022-04-08)
+
+
+### Bug Fixes
+
+* fix cops ([caf2260](https://github.com/klueless-io/k_config/commit/caf226083710d741a5f2269cc35eec4aa5c7c6e6))
+
 ## [0.0.7](https://github.com/klueless-io/k_config/compare/v0.0.6...v0.0.7) (2022-02-05)
 
 
