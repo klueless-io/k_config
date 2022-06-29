@@ -1,3 +1,10 @@
+## [0.0.9](https://github.com/klueless-io/k_config/compare/v0.0.8...v0.0.9) (2022-06-29)
+
+
+### Bug Fixes
+
+* update rubocop.yml ([27af2ae](https://github.com/klueless-io/k_config/commit/27af2aedfdf929270e05c31450edfef901e380ec))
+
 ## [0.0.8](https://github.com/klueless-io/k_config/compare/v0.0.7...v0.0.8) (2022-04-08)
 
 
