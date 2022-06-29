@@ -1,3 +1,10 @@
+## [0.0.10](https://github.com/klueless-io/k_config/compare/v0.0.9...v0.0.10) (2022-06-29)
+
+
+### Bug Fixes
+
+* update gem dependancies ([bda0476](https://github.com/klueless-io/k_config/commit/bda0476cc99018e123e38f4890eaa34a7d40d32f))
+
 ## [0.0.9](https://github.com/klueless-io/k_config/compare/v0.0.8...v0.0.9) (2022-06-29)
 
 
