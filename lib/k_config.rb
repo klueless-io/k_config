@@ -44,7 +44,7 @@ module KConfig
   end
 end
 
-if ENV['KLUE_DEBUG']&.to_s&.downcase == 'true'
+if ENV.fetch('KLUE_DEBUG', 'false').downcase == 'true'
   namespace = 'KConfig::Version'
   file_path = $LOADED_FEATURES.find { |f| f.include?('k_config/version') }
   version   = KConfig::VERSION.ljust(9)
