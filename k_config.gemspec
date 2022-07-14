@@ -22,9 +22,10 @@ Gem::Specification.new do |spec|
 
   # spec.metadata['allowed_push_host'] = "Set to 'http://mygemserver.com'"
 
-  spec.metadata['homepage_uri']     = spec.homepage
-  spec.metadata['source_code_uri']  = 'https://github.com/klueless-io/k_config'
-  spec.metadata['changelog_uri']    = 'https://github.com/klueless-io/k_config/blob/main/CHANGELOG.md'
+  spec.metadata['homepage_uri']           = spec.homepage
+  spec.metadata['source_code_uri']        = 'https://github.com/klueless-io/k_config'
+  spec.metadata['changelog_uri']          = 'https://github.com/klueless-io/k_config/blob/main/CHANGELOG.md'
+  spec.metadata['rubygems_mfa_required']  = 'true'
 
   # The `git ls-files -z` loads the RubyGem files that have been added into git.
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
