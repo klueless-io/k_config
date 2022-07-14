@@ -1,3 +1,11 @@
+## [0.0.11](https://github.com/klueless-io/k_config/compare/v0.0.10...v0.0.11) (2022-07-14)
+
+
+### Bug Fixes
+
+* bump gem versions ([1ffec6d](https://github.com/klueless-io/k_config/commit/1ffec6d4a6763ef8d2f369cb170e67228ac163dd))
+* bump gem versions ([d164adc](https://github.com/klueless-io/k_config/commit/d164adc2ea6491912dbf7b9ee5cc3f05f430df18))
+
 ## [0.0.10](https://github.com/klueless-io/k_config/compare/v0.0.9...v0.0.10) (2022-06-29)
 
 
